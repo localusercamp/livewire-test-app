@@ -1,0 +1,59 @@
+/* eslint-disable */
+{
+    "root": true,
+
+    "env": {
+      "browser": true,
+      "node": true
+    },
+
+    "plugins": [
+        "tailwindcss"
+    ],
+
+    "rules": {
+        /*
+        |--------------------
+        | JavaScript config |
+        |--------------------
+        */
+        "semi": ["error", "always"],
+        "comma-dangle": ["error", "always-multiline"],
+        "camelcase": [0],
+        "space-before-function-paren": [0],
+        "no-undef": [0],
+        "arrow-parens": ["error", "as-needed"],
+        "no-return-assign": [0],
+        "no-multi-spaces": [0],
+        "curly": ["error", "multi-line"],
+        "key-spacing": ["error", {
+          "mode": "minimum"
+        }],
+        "no-multiple-empty-lines": ["error", {
+          "max": 3
+        }],
+        "brace-style": ["error", "stroustrup"],
+        "func-call-spacing": [0],
+        "indent": ["error", 2, {
+          "SwitchCase": 1
+        }],
+
+        /*
+        |---------------------
+        | TailwindCSS config |
+        |---------------------
+        */
+        "tailwindcss/classnames-order": "warn",
+        "tailwindcss/enforces-negative-arbitrary-values": "warn",
+        "tailwindcss/enforces-shorthand": "warn",
+        "tailwindcss/migration-from-tailwind-2": "warn",
+        "tailwindcss/no-arbitrary-value": "off",
+        "tailwindcss/no-custom-classname": ["warn", {
+            "whitelist": [
+            "tm\\-.*",
+            "__.*"
+            ]
+        }],
+        "tailwindcss/no-contradicting-classname": "error",
+    }
+}
